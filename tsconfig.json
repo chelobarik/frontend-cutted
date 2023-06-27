@@ -1,0 +1,49 @@
+{
+	"vueCompilerOptions": {
+		"plugins": [
+			"@volar/vue-language-plugin-pug"
+		],
+		"target": 2
+	},
+
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"strict": true,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"noImplicitAny": false,
+		"baseUrl": ".",
+		"types": [
+			"webpack-env",
+			"mocha",
+			"chai"
+		],
+		"paths": {
+			"@/*": [
+				"src/*"
+			]
+		},
+		"lib": [
+			"esnext",
+			"dom",
+			"dom.iterable",
+			"scripthost"
+		],
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+	],
+	"exclude": [
+		"node_modules",
+		"tests",
+		"dist"
+	],
+}
